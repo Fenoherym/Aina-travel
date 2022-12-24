@@ -1,0 +1,38 @@
+.circuit-page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.circuit-page .content .img img {
+    width: 100%;
+    height: auto;
+}
+
+h3.title {
+    font-family: "oswald", sans-serif;
+    opacity: 0.8;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.circuit-content {
+    background-color: rgb(248, 246, 246);
+
+}
+
+ul.list-inclus li,
+ul.list-non-inclus {
+    font-size: .9rem;
+    opacity: 0.9;
+    list-style: none;
+
+}
+
+ul.list-inclus li i {
+    color: green;
+}
+
+ul.list-non-inclus li i {
+    color: red;
+}

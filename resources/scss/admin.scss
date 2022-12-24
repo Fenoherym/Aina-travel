@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "roboto-700";
+    src: url("../roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "pacifico";
+    src: url("../paciffico/Pacifico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "oswald";
+    src: url('../Oswald/static/Oswald-SemiBold.ttf') format("truetype");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+header {
+    background: none;
+    height: auto;
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        transition: all 500ms;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #50b628;
+        z-index: 10;
+
+        h3 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: "pacifico", sans-serif;
+
+            span {
+                font-family: "pacifico", sans-serif;
+                color: #333;
+            }
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-left: 30px;
+                padding: 10px;
+                color: #fff;
+                list-style: none;
+                text-transform: uppercase;
+                transition: ease-in-out 300ms;
+
+            }
+
+
+            li:hover,
+            li.active {
+                background: #fff;
+                color: rgb(100, 100, 100);
+                border-radius: 10px 5px;
+
+                a:hover {
+                    color: inherit;
+                }
+            }
+
+
+        }
+
+        .menu-bars {
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 5px;
+            display: none;
+        }
+    }
+}
+
+.content {
+    margin-top: 100px;
+
+    .card {
+        .card-body {
+            padding: 20px;
+        }
+    }
+}
+
+#dashboard {
+    .stat {
+        .card {
+            i {
+                font-size: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
